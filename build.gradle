@@ -1,0 +1,14 @@
+import java.text.SimpleDateFormat
+
+def buildTime() {
+    def df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    return df.format(new Date())
+}
+
+task buildGuppit(){
+    dependsOn ':guppit-server:build'
+
+    doLast {
+        println "Project successfully built on ${buildTime()}"
+    }
+}

@@ -5,6 +5,10 @@ def buildTime() {
     return df.format(new Date())
 }
 
+configure(allprojects) { project ->
+    version = "1.0.0"
+}
+
 task buildGuppit(){
     dependsOn ':guppit-server:build'
 

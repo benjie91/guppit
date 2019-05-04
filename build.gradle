@@ -13,6 +13,7 @@ task buildGuppit(){
     dependsOn ':guppit-server:build'
 
     doLast {
-        println "Project successfully built on ${buildTime()}"
+        println "\u001B[33mGuppit Version: ${project.version}"
+        println "\u001B[33mProject successfully built on ${buildTime()}\u001B[0m"
     }
 }

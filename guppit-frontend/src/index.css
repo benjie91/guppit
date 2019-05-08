@@ -1,3 +1,6 @@
+/*From Inspinia Theme*/
+@import "inspinia/css/bootstrap.css";
+@import "inspinia/css/animate.css";
 @import "inspinia/css/inspinia.css";
 
 body {
